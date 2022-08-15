@@ -154,7 +154,7 @@ function App() {
     }
     else {
       return (
-        <DataLoader name="form" onDataLoaded={renderForm} style={{height:"50vh",fontSize:"80px",borderBottom:"2px solid black"}}></DataLoader>
+        <DataLoader name="form" onDataLoaded={renderForm} style={{height:"8vh",fontSize:"30px",borderBottom:"2px solid black"}}></DataLoader>
       )
     }
   }
@@ -170,7 +170,7 @@ function App() {
     }
     else {
       return (
-        <DataLoader name="chart" onDataLoaded={renderChart} style={{height:"40vh",fontSize:"80px"}}></DataLoader>
+        <DataLoader name="chart" onDataLoaded={renderChart} style={{height:"90vh",fontSize:"80px"}}></DataLoader>
       )
     }
   }
