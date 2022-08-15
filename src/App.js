@@ -55,12 +55,12 @@ function App() {
       else if(earn.time[earnIndex] > lose.time[loseIndex]){
         x.push(new Date(lose.time[loseIndex]).toDateString())
         dataBuy.push(0)
-        dataSell.push(-lose.value[loseIndex++])
+        dataSell.push(lose.value[loseIndex++])
       }
       else {
         x.push(new Date(lose.time[loseIndex]).toDateString())
         dataBuy.push(earn.value[earnIndex++])
-        dataSell.push(-earn.value[loseIndex++])
+        dataSell.push(lose.value[loseIndex++])
       }
     }
     while(earnIndex < earn.time.length){
@@ -71,7 +71,7 @@ function App() {
     while(loseIndex < lose.time.length){
       x.push(new Date(lose.time[loseIndex]).toDateString())
       dataBuy.push(0)
-      dataSell.push(-lose.value[loseIndex++])
+      dataSell.push(lose.value[loseIndex++])
     }
     res.x = x
     res.y[0]= dataBuy
